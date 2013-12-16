@@ -1,0 +1,60 @@
+
+<h1> Create a playdate </h1>
+<div class="new_playdate_details">
+    <form class="signup-form" method="post" action="https://127.0.0.1/create">
+           
+        <div class="playdate_details">    
+            <div class="location">
+                <label type="text">Location</label>
+                <input type="text" class="location_text" name="location" />
+            </div>
+            <div class="date_time">
+                <label type="text">Date & time</label>
+                <input type="text" class="date_time_text" name="date_time" />
+            </div>
+        </div>
+
+        <div class="kid details">
+            <div class="kid_age">
+                <label type="text">Age Group</label>
+                <input type="text" class="kid_age_text" name="kid_age" />
+            </div>
+            <div class="kid_num">
+                <label type="text">Number of Kids</label>
+                <input type="text" class="kid_num_text" name="kid_num" />
+            </div>
+            <div class="kid_gameplan">
+                <label type="text">Game plan for the play date</label>
+                <input type="text" class="kid_gameplan_text" name="kid_gameplan" />
+            </div>
+            <div class="kid_intersts">
+                <label type="text">Interests of the kid</label>
+                <input type="text" class="kid_interests_text" name="kid_interests" />
+            </div>
+        </div>
+
+        <div class="parent_details">
+            <div class="parent_presence">
+                <input type="checkbox" name="parent_presence" value="1" checked="checked" class="parent_presence" />
+                <label for="parent_presence">Parent presence required</label>
+                <br/>
+                <label type="text">Mom/Dad/no preference/both</label>
+                <input type="text" class="parent_selection_text" name="parent_selection" />
+            </div>
+
+            <div class="parent_gameplan">
+                <label type="text">Game plan for the parents hangout</label>
+                <input type="text" class="parent_gameplan_text" name="parent_gameplan" />
+            </div>
+            <div class="parent_intersts">
+                <label type="text">Interests of the parent/s</label>
+                <input type="text" class="parent_interests_text" name="parent_interests" />
+            </div>
+        </div>
+        <div>
+            <input type="submit" class="newplaydate_submit" value="Submit" />
+            <input type="checkbox" name="remember_playdate_preference" value="1" checked="checked" id="remember_me" class="remember_playdate_preference" />
+                    <label for="remember_me">Remember preferences</label>
+        </div>     
+    </form>
+</div>

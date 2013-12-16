@@ -1,0 +1,54 @@
+
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="header_content">
+                <a id="logo" href="/home/">
+                    <h1>Playdate Organizer</h1>
+                </a>    
+            </div>
+        </div>
+
+        <div class="navigation">
+            <ul id="header_nav">    
+                <li><a href="/search/" class="find_playdates_nav">Find playdates</a></li>   
+                <li><a href="/features/" class="create_playdates_nav">Create a playdate</a></li>
+                <li><a href="/help/" class=" help_nav">Help</a></li>
+
+
+                <li id="user_account">
+                    <ul>
+                        <li id="login">
+                            <a href="/login/">Log in</a>
+                        </li>
+                        <li id="signup">
+                            <a href="/signup/">Sign up</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="playdate_listing">
+            <hgroup id="chosen_location" class="clrfix">
+            <h4>
+                    Search playdates around you
+            </h4>
+            <a href="/search/" class="js-search-click-action" data-source="homePage:changeLocationLink">
+                Enter your location
+            </a>
+            </hgroup>
+
+            <form id="home_search" action="/search/" method="get">
+                <input type="hidden" name="loc" value="San Francisco, CA" />
+                <input type="hidden" name="q" value="" class="authentic" />
+                <input type="text" id="city_search" name="" autocomplete="off" placeholder='Search for playdates' class="default_value" />
+                <input type="submit" id="search_button" value='Search' class="action_button action_button_go js-search-click-action" data-source="homePage:searchButton" />
+            </form>
+
+
+    </body>
+    </html>
